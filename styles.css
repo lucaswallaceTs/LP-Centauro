@@ -100,7 +100,7 @@ body{
 .container-circuitos{
     width: 100%;
     max-width: 1296px; 
-    margin-top: 64px;
+    margin: 64px 0px;
 }
 .container-circuitos .circuitos{
     display: flex;
@@ -230,6 +230,53 @@ margin: 16px 0px 0px 0px;
 }
 .cards-title p:last-child{
     margin-bottom: 24px;
+}
+.container-beneficios{
+    background-color: #F3F3F3;
+    padding: 64px 0px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-beneficios h2{
+    font-size: 32px;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.content-beneficios{
+    display: flex;
+    max-width: 964px;
+    margin-top: 40px;
+}
+.card-beneficio{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-beneficio{
+    border: 4px solid #CCCCCC;
+    border-radius: 16px;
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px 16px 0px;
+}
+.card-beneficio .descricao-beneficio{
+    display: flex;
+    flex-direction: column;
+}
+.card-beneficio .descricao-beneficio strong{
+    text-align: center;
+}
+.card-beneficio .descricao-beneficio p{
+    margin: 8px 0px 0px 0px;
+    text-align: center;
 }
 @media (max-width: 768px){
     .background-inicio-logo{
@@ -385,6 +432,28 @@ margin: 16px 0px 0px 0px;
     .encerrado .cards-title button{
         background-color: #1DBE24;
     }
-
+    .container-beneficios h2{
+        font-size: 18px;
+        width: calc(100% - 20px);
+    }
+    .content-beneficios{
+        flex-direction: column;
+        width: calc(100% - 40px);
+    }
+    .card-beneficio{
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .card-beneficio .descricao-beneficio{
+        margin-left: 16px;
+        width: 80%;
+    }
+    .card-beneficio .descricao-beneficio strong{
+        text-align: left;
+    }
+    .card-beneficio .descricao-beneficio p{
+        text-align: left;
+    }
 
 }
