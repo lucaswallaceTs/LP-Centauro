@@ -278,6 +278,70 @@ margin: 16px 0px 0px 0px;
     margin: 8px 0px 0px 0px;
     text-align: center;
 }
+.container-patrocinio{
+    background-color: #DED9CA;
+    width: 100%;
+    max-width: 1440px;
+    color: #E30000;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 0px 0px;
+}
+.wrapper-patrocinio{
+    width: 100%;
+    max-width: 1296px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.wrapper-patrocinio h2{
+    font-size: 32px;
+    margin: 0px 0px 16px 0px;
+}
+.wrapper-patrocinio p{
+    margin: 0;
+}
+.wrapper-parceiro{
+    width: 100%;
+    max-width: 1296px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.wrapper-parceiro h2{
+    font-size: 32px;
+    margin: 0px 0px 16px 0px;
+}
+.wrapper-parceiro p{
+    margin: 0;
+}
+.logo-patrocinadores{
+    display: flex;
+    margin: 32px 0px;
+}
+.logo-patrocinadores div{
+    background-color: #0000000A;
+    width: 203px;
+    height: 203px;
+    border-radius: 16px;
+    margin: 0px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+    padding: 18px 0px;
+    background-color: #D5D0C2;
+    color: #676152;
+}
+footer a{
+    text-decoration: none;
+    color: #676152;
+    font-weight: 600;
+}
 @media (max-width: 768px){
     .background-inicio-logo{
         width: calc(100% - 40px);
@@ -455,5 +519,26 @@ margin: 16px 0px 0px 0px;
     .card-beneficio .descricao-beneficio p{
         text-align: left;
     }
-
+    .wrapper-patrocinio{
+        width: calc(100% - 40px);
+    }
+    .wrapper-parceiro{
+        width: calc(100% - 40px);
+    }
+    .logo-patrocinadores{
+        overflow-y: scroll;
+    }
+    .logo-patrocinadores div{
+        padding: 0px 21px;
+        max-width: 203px;
+    }
+    footer{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+    footer p{
+        margin: 0px;
+        width: calc(100% - 40px);
+    }
 }
