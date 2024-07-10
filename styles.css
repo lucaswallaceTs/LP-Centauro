@@ -8,19 +8,48 @@ body{
     align-items: center;
     font-family: "Rubik", sans-serif;
 }
+.scrolled{
+    background-color: #000000;
+}
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    padding: 29px 0px;
+    justify-content: center;
+    position: fixed;
+    color: #FFF;
+    top: 0;
+    z-index: 10;
+}
+
+header nav a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 24px;
+}
 .container-inicio{
     width: 100%;
     max-width: 1440px;    
     background-color: #E30000;
+    background: url(imagens/man-sportswear-running-road.svg);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: relative;
     height: 750px;
 }
+.desbrava-mobile{
+    display: none;
+}
 .background-inicio-logo{
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
@@ -34,17 +63,39 @@ body{
 .background-inicio{
     background: url(imagens/background-inicio.svg);
     height: 750px;
+    background-repeat: no-repeat;
+    width: 10.5%;
+    position: absolute;
+    right: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .background-inicio-texto{
     width: 85%;
-    color: #FFF;
+    color: #FFF;    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .background-inicio-texto h1{
-    font-size: 48px;
+    font-size: 32px;
     margin: auto;
     display: flex;
+    justify-content: center;
+}
+.background-inicio-texto p{
+    margin: 16px auto auto auto;
+}
+.line{
+    width: 130px;
+height: 4px;
+border-radius: 100px;
+opacity: 0.32px;
+background-color: #FFF;
+margin-bottom: 16px;
+opacity: 32%;
 }
 .container-projeto{
     width: 100%;
@@ -343,15 +394,36 @@ footer a{
     font-weight: 600;
 }
 @media (max-width: 768px){
+    header nav{
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+    header nav a:first-child{
+        margin-left: 24px;
+    }
     .background-inicio-logo{
         width: calc(100% - 40px);
-        padding: 70px 20px 0px 20px;
+        padding: 106px 20px 0px 20px;
+        justify-content: space-around;
+        align-items: center;
+        height: 75%;
     }
     .container-inicio{
         flex-direction: column;
+        background-position-x: 60%;
+    }
+    .desbrava-mobile{
+        display: flex;
+    }
+    .desbrava-desktop{
+        display: none;
     }
     .background-inicio{
-    background:none ;
+        background:none;
+    }
+    .background-inicio-texto{
+        width: 100%;
+        text-align: center;
     }
     .background-inicio-texto h1 {
         font-size: 24px;
