@@ -40,14 +40,19 @@ header nav a{
     background: url(imagens/man-sportswear-running-road.svg);
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     position: relative;
     height: 750px;
+}
+.desbrava-desktop{
+    margin-top: 50px;
 }
 .desbrava-mobile{
     display: none;
 }
 .background-inicio-logo{
     width: 100%;
+    height: 85%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -90,12 +95,12 @@ header nav a{
 }
 .line{
     width: 130px;
-height: 4px;
-border-radius: 100px;
-opacity: 0.32px;
-background-color: #FFF;
-margin-bottom: 16px;
-opacity: 32%;
+    height: 4px;
+    border-radius: 100px;
+    opacity: 0.32px;
+    background-color: #FFF;
+    margin-bottom: 16px;
+    opacity: 32%;
 }
 .container-projeto{
     width: 100%;
@@ -108,7 +113,6 @@ opacity: 32%;
     background-size: cover;
     position: relative;
     background-color: #000000;
-
 }
 .filter-background{
     width: 1296px;
@@ -282,116 +286,109 @@ margin: 16px 0px 0px 0px;
 .cards-title p:last-child{
     margin-bottom: 24px;
 }
-.container-beneficios{
+.container-descontos{
     background-color: #F3F3F3;
-    padding: 64px 0px;
-    width: 100%;
-    max-width: 1440px;
+    width: calc(100% - 144px);
+    max-width: calc(1440px - 144px);
+    padding: 64px 72px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.container-beneficios h2{
-    font-size: 32px;
+.container-descontos h1{
+    margin: 0px 0px 40px 0px;
     width: 50%;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
-.content-beneficios{
+.container-descontos p{
+    margin: 4px 0px 8px 0px;
+}
+.descontos{
     display: flex;
-    max-width: 964px;
-    margin-top: 40px;
 }
-.card-beneficio{
-    width: 100%;
-    max-width: 300px;
+.image-descontos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;        
+    margin: 0px 32px 0px 32px;
 }
-.image-beneficio{
-    border: 4px solid #CCCCCC;
-    border-radius: 16px;
+.logo-desconto-centauro{
+    background-color: #E30000;
     width: 80px;
     height: 80px;
-    margin: 0px 0px 16px 0px;
-}
-.card-beneficio .descricao-beneficio{
-    display: flex;
-    flex-direction: column;
-}
-.card-beneficio .descricao-beneficio strong{
-    text-align: center;
-}
-.card-beneficio .descricao-beneficio p{
-    margin: 8px 0px 0px 0px;
-    text-align: center;
-}
-.container-patrocinio{
-    background-color: #DED9CA;
-    width: 100%;
-    max-width: 1440px;
-    color: #E30000;
-    display: flex;
-    flex-direction: column;
-    padding: 80px 0px 0px 0px;
-}
-.wrapper-patrocinio{
-    width: 100%;
-    max-width: 1296px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-.wrapper-patrocinio h2{
-    font-size: 32px;
-    margin: 0px 0px 16px 0px;
-}
-.wrapper-patrocinio p{
-    margin: 0;
-}
-.wrapper-parceiro{
-    width: 100%;
-    max-width: 1296px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-.wrapper-parceiro h2{
-    font-size: 32px;
-    margin: 0px 0px 16px 0px;
-}
-.wrapper-parceiro p{
-    margin: 0;
-}
-.logo-patrocinadores{
-    display: flex;
-    margin: 32px 0px;
-}
-.logo-patrocinadores div{
-    background-color: #0000000A;
-    width: 203px;
-    height: 203px;
     border-radius: 16px;
-    margin: 0px 16px 0px 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
 }
+.logo-desconto-nike{
+    background-color: #111111;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.logo-desconto-spoint{
+    background-color: #FFD600;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
 footer{
     width: 100%;
     max-width: 1440px;
-    text-align: center;
-    padding: 18px 0px;
-    background-color: #D5D0C2;
-    color: #676152;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    color: #FFF;
 }
-footer a{
-    text-decoration: none;
-    color: #676152;
-    font-weight: 600;
+footer h2{
+    font-size: 32px;
+    margin: 80px 0px 16px 0px;
+}
+footer p{
+    font-size: 16px;
+    margin: 0;
+}
+.logo-footer{
+    margin: 40px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 635px;
+    justify-content: space-between;
+}
+.ticket img{
+    margin-bottom: 26px;
+}
+.ticket{
+    padding: 32px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+}
+.ticket a{
+    text-decoration: underline;
+    color: #FFF;
 }
 @media (max-width: 768px){
     header nav{
@@ -411,6 +408,7 @@ footer a{
     .container-inicio{
         flex-direction: column;
         background-position-x: 60%;
+        height: 600px;
     }
     .desbrava-mobile{
         display: flex;
@@ -568,49 +566,55 @@ footer a{
     .encerrado .cards-title button{
         background-color: #1DBE24;
     }
-    .container-beneficios h2{
-        font-size: 18px;
-        width: calc(100% - 20px);
+    .container-descontos{
+        width: calc(100% - 32px);
+        padding: 32px 16px;
     }
-    .content-beneficios{
+    .container-descontos h1{
+        width: 100%;
+    }
+    .descontos{
         flex-direction: column;
-        width: calc(100% - 40px);
+        width: 100%;
     }
-    .card-beneficio{
-        flex-direction: row;
+    .spoint{
+        width: 70% !important;
+    }
+    .image-descontos{
+        display: flex;
+        flex-direction: row;  
+        margin: 0;  
         max-width: 100%;
-        justify-content: space-between;
     }
-    .card-beneficio .descricao-beneficio{
-        margin-left: 16px;
+    .image-descontos .logo-desconto-centauro, .logo-desconto-nike, .logo-desconto-spoint{
+        width: 64px;
+        height: 64px;
+    }
+    .image-descontos img{
         width: 80%;
     }
-    .card-beneficio .descricao-beneficio strong{
-        text-align: left;
-    }
-    .card-beneficio .descricao-beneficio p{
-        text-align: left;
-    }
-    .wrapper-patrocinio{
-        width: calc(100% - 40px);
-    }
-    .wrapper-parceiro{
-        width: calc(100% - 40px);
-    }
-    .logo-patrocinadores{
-        overflow-y: scroll;
-    }
-    .logo-patrocinadores div{
-        padding: 0px 21px;
-        max-width: 203px;
-    }
-    footer{
-        display: flex;
-        margin: auto;
-        justify-content: center;
+    .image-descontos .text-descontos{
+        width: 75%;
     }
     footer p{
-        margin: 0px;
-        width: calc(100% - 40px);
+        padding: 0px 16px;
+    }
+    .logo-footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo-footer .nike{
+        margin-top: 40px;
+        max-width: 173px;
+    }
+    .logo-footer img{
+        width: 80%;
+    }
+    .ticket{
+        width: calc(100% - 32px);
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 }
