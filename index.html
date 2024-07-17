@@ -22,13 +22,17 @@
       </nav>
     </header>
     <div class="container-inicio" id="Inicio">
+      <div class="filter"></div>
       <div class="background-inicio-logo">
         <img class="desbrava-desktop" src="imagens/logo-desbrava.svg" alt="" />
-        <img class="desbrava-mobile" src="imagens/logo-desbrava-mobile.svg" alt="">
+        <div class="image-mobile">
+          <img class="desbrava-mobile" src="imagens/logo-desbrava-mobile.svg" alt="">
+          <img class="desbrava-mobile desbrava-nike" src="imagens/logo-nike-mobile.svg" alt="">
+        </div>
         <div class="background-inicio-texto">
           <div class="line"></div>
-          <h1>Percursos inéditos pelo Brasil com vagas abertas</h1>
-          <p>O MELHOR CIRCUITO DE RUA DO BRASIL COM VAGAS ABERTAS!</p>
+          <h1>Descubra seu corre por percursos inéditos pelo Brasil!</h1>
+          <p>A Centauro estará em 10 circuitos inéditos de corrida de rua.</p>
         </div>
       </div>
       <div class="background-inicio"></div>
@@ -36,20 +40,15 @@
     <div class="container-projeto" id="Sobre">
       <div class="filter-background"></div>
       <div class="filter-play">
-        <img src="imagens/rectangle-projeto.svg" alt="" />
+        <img src="imagens/_Q9A7452.jpg" alt="" />
       </div>
-
       <div class="wrapper-projeto">
         <h2>SOBRE O PROJETO</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          ante libero, posuere quis dui ut, convallis porta dolor. Phasellus in
-          diam a urna gravida aliquam. Fusce feugiat consequat cursus. Sed at
-          risus lacinia, suscipit magna ac, pulvinar quam. Proin commodo orci
-          non risus ultrices sagittis. Fusce luctus convallis erat, sit amet
-          cursus nisi pellentesque ac. Nullam sit amet libero aliquam, varius
-          leo at, convallis leo.
+          A Centauro e a Nike se juntaram para mostrar que corrida não é somente um esporte, mas um estilo de vida. 
         </p>
+        <p>Te convidamos a descobrir seu corre de rua por percursos inéditos presentes pelo Brasil.</p> 
+          <strong>Vamos desbravar juntos?</strong>
       </div>
       <div class="wrapper-play">
         <div>
@@ -62,33 +61,35 @@
     <div class="container-circuitos" id="Eventos">
       <div class="circuitos">
         <div class="circuitos-title">
-          <h2>CIRCUITOS 2024</h2>
+          <h2>DESBRAVA 2024</h2>
           <p>
-            Salve o Corinthians O campeão dos campeões Eternamente Dentro dos
-            nossos corações
+            Percursos inéditos, kits exclusivos, benefícios e muito mais!
           </p>
         </div>
         <div class="circuitos-button">
-          <button class="button-selected">Todos</button>
-          <button>Abertos</button>
-          <button>Esgotados</button>
-          <button>Realizados</button>
-          <button>Encerrados</button>
+          <button class="button-selected" data-filter="todos">Todos</button>
+          <button data-filter="embreve">Em breve</button>
+          <button data-filter="aberto">Abertos</button>
+          <button class="button-desativado">Esgotados</button>
+          <button class="button-desativado">Realizados</button>
+          <button class="button-desativado">Encerrados</button>
         </div>
         <div class="circuitos-select-mobile">
-          <select name="" id="">
-            <option value="">Todos</option>
-            <option value="">Abertos</option>
-            <option value="">Esgotados</option>
-            <option value="">Realizados</option>
-            <option value="">Encerrados</option>
+          <select name="" id="filter-select">
+            <option value="todos">Todos</option>
+            <option value="embreve">Em breve</option>
+            <option value="aberto">Abertos</option>
+            <!-- <option value="esgotados">Esgotados</option>
+            <option value="realizados">Realizados</option>
+            <option value="encerrados">Encerrados</option> -->
           </select>
         </div>
       </div>
       <div class="container-cards">
-        <div class="cards-centauro">
+        <div class="cards-centauro aberto">
+          <div class="filter-card"></div>
           <div class="container-image-card">
-            <img src="imagens/Rectangle-1147.png" alt="" />
+            <img src="imagens/banner-card-sao-jose.jpg" alt="" />
           </div>
 
           <div class="cards-title">
@@ -99,9 +100,11 @@
               <strong>ABERTO</strong>
             </div>
 
-            <h3>Campo Grande · MS</h3>
-            <p>25/09 · Domingo</p>
-            <p>4KM · 8KM · 16KM</p>
+            <h3>São José dos Campos · SP</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Shopping Vale Sul</strong>
+            <p>18/08 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
             <div class="cards-title-button button-mobile">
               <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
                 <button>Inscreva-se</button>
@@ -110,78 +113,91 @@
             </div>
           </div>
         </div>
-        <div class="cards-centauro esgotado">
+
+        <div class="cards-centauro embreve">
+          <div class="filter-card"></div>
           <div class="container-image-card">
-            <img src="imagens/Rectangle-1149.png" alt="" />
+            <img src="imagens/banner-card-fortaleza.jpg" alt="" />
+          </div>
+          <div class="cards-title">
+            <div class="cards-title-button button-desktop">
+              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a> -->
+              <strong>EM BREVE</strong>
+            </div>
+            <h3>Fortaleza · CE</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Shopping Iguatemi Bosque</strong>
+            <p>15/09 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
+            <div class="cards-title-button button-mobile">
+              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <!-- <button>Inscreva-se</button> -->
+              </a>
+              <strong>EM BREVE</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-centauro embreve">
+          <div class="filter-card"></div>
+          <div class="container-image-card">
+            <img src="imagens/banner-card-goiania.jpg" alt="" />
           </div>
 
           <div class="cards-title">
             <div class="cards-title-button button-desktop">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>VER EVENTO</button>
-              </a>
-              <strong>ESGOTADO</strong>
+              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a> -->
+              <strong>EM BREVE</strong>
             </div>
-            <h3>Campo Grande · MS</h3>
-            <p>25/09 · Domingo</p>
-            <p>4KM · 8KM · 16KM</p>
+
+            <h3>Goiás · Goiânia</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Flamboyant Shopping</strong>
+            <p>08/09 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
             <div class="cards-title-button button-mobile">
               <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>VER EVENTO</button>
-              </a>              
-              <strong>ESGOTADO</strong>
+                <!-- <button>Inscreva-se</button> -->
+              </a>
+              <strong>EM BREVE</strong>
             </div>
           </div>
         </div>
-        <div class="cards-centauro realizado">
+
+        <div class="cards-centauro embreve">
+          <div class="filter-card"></div>
           <div class="container-image-card">
-            <img src="imagens/Rectangle-1151.png" alt="" />
+            <img src="imagens/banner-card-sp.jpg" alt="" />
           </div>
+
           <div class="cards-title">
             <div class="cards-title-button button-desktop">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>VER EVENTO</button>
-              </a>              
-              <strong>REALIZADO</strong>
+              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a> -->
+              <strong>EM BREVE</strong>
             </div>
-            <h3>Campo Grande · MS</h3>
-            <p>25/09 · Domingo</p>
-            <p>4KM · 8KM · 16KM</p>
+            <h3>São Paulo · SP</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Shopping Metrô Itaquera</strong>
+            <p>22/09 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
             <div class="cards-title-button button-mobile">
               <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>VER EVENTO</button>
-              </a>              
-              <strong>REALIZADO</strong>
-            </div>
-          </div>
-        </div>
-        <div class="cards-centauro encerrado">
-          <div class="container-image-card">
-            <img src="imagens/Rectangle-1153.png" alt="" />
-          </div>
-          <div class="cards-title">
-            <div class="cards-title-button button-desktop">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>RESULTADO</button>
+                <!-- <button>Inscreva-se</button> -->
               </a>
-             
-              <strong>ENCERRADO</strong>
-            </div>
-            <h3>Campo Grande · MS</h3>
-            <p>25/09 · Domingo</p>
-            <p>4KM · 8KM · 16KM</p>
-            <div class="cards-title-button button-mobile">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>RESULTADO</button>
-              </a>
-             
-              <strong>ENCERRADO</strong>
+              <strong>EM BREVE</strong>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
-    <div class="container-descontos">
+    <div id="Patrocinio" class="container-descontos">
       <h1>DESBRAVA 2024, Conheça tudo que encontrará participando:</h1>
       <div class="descontos">
         <div class="image-descontos">
@@ -202,15 +218,17 @@
             <p>Retire o Kit e ganhe desconto especial em produtos da marca!</p>
           </div>
         </div>
-        <div class="image-descontos">
-          <div class="logo-desconto-spoint">
-            <img class="spoint" src="imagens/logo-spoint.svg" alt="">
+        <a class="site-spoint" href="https://spoint.onelink.me/M2OO/umpluxml?af_qr=true?utm_source=spoint&utm_medium=centaurodesbrava&utm_campaign=centaurodesbravaLP&af_viewthrough_lookback=1h&source_caller=api&is_retargeting=true&pid=spoint&af_channel=centaurodesbrava&c=centaurodesbravaLP ">
+          <div class="image-descontos">
+            <div class="logo-desconto-spoint">
+              <img class="spoint" src="imagens/logo-spoint.svg" alt="">
+            </div>
+            <div class="text-descontos">
+              <strong class="link-spoint">SPOINT </strong>
+              <p>Sua corrida vale dinheiro na Centauro</p>
+            </div>
           </div>
-          <div class="text-descontos">
-            <strong>SPOINT </strong>
-            <p>Sua corrida vale dinheiro na Centauro</p>
-          </div>
-        </div>
+        </a>
       </div>
 
     </div>
@@ -236,6 +254,38 @@
           header.classList.remove("scrolled");
         }
       });
+
+      document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.circuitos-button button');
+  const select = document.getElementById('filter-select');
+  const cards = document.querySelectorAll('.cards-centauro');
+
+  function filterCards(filter) {
+    cards.forEach(card => {
+      if (filter === 'todos') {
+        card.style.display = '';
+      } else {
+        card.classList.contains(filter) ? card.style.display = '' : card.style.display = 'none';
+      }
+    });
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      filterCards(filter);
+      buttons.forEach(btn => btn.classList.remove('button-selected'));
+      button.classList.add('button-selected');
+    });
+  });
+
+  select.addEventListener('change', () => {
+    const filter = select.value;
+    filterCards(filter);
+  });
+  filterCards('todos');
+});
+
     </script>
   </body>
 </html>
