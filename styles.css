@@ -218,6 +218,7 @@ header nav a{
     border: none;
     font-weight: 500;
     font-family: "Rubik", sans-serif;
+    cursor: pointer;
 }
 .circuitos-button .button-selected{
     background-color: #060606;
